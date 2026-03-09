@@ -1,0 +1,549 @@
+<!-- Personality Trust | Daily Consistency Signal Tracker
+Atria-styled | paged layout | 2 downloadable PNG worksheets
+AnewSpring-safe: inline CSS + minimal JS
+-->
+
+<div id="personalityTrackerAtria" style="max-width:920px;margin:18px auto;font-family:Arial, sans-serif;color:#000C48;">
+
+  <style>
+    @keyframes atriaFadeUp{
+      from{opacity:0;transform:translateY(8px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    #personalityTrackerAtria .page{display:none;animation:atriaFadeUp .35s ease}
+    #personalityTrackerAtria .page.active{display:block}
+    #personalityTrackerAtria .shell{
+      background:linear-gradient(135deg,#FFFFFF,#CDFFFC);
+      border:1px solid rgba(63,194,194,.42);
+      border-radius:16px;
+      padding:18px;
+      box-shadow:0 10px 22px rgba(0,12,72,.08);
+    }
+    #personalityTrackerAtria .title{
+      font-size:22px;font-weight:800;color:#211499;line-height:1.2;margin:0 0 6px;
+    }
+    #personalityTrackerAtria .subtitle{
+      font-size:14px;line-height:1.45;color:rgba(0,12,72,.78);margin:0;
+    }
+    #personalityTrackerAtria .pill{
+      display:inline-block;padding:6px 10px;border-radius:999px;
+      background:rgba(33,20,153,.08);border:1px solid rgba(33,20,153,.18);
+      color:#211499;font-size:12px;font-weight:700;
+    }
+    #personalityTrackerAtria .card{
+      background:#FFFFFF;border:1px solid rgba(0,12,72,.10);
+      border-radius:14px;padding:12px 14px;
+    }
+    #personalityTrackerAtria .soft{
+      background:rgba(33,20,153,.06);border:1px solid rgba(33,20,153,.16);
+      border-radius:12px;padding:10px 12px;
+    }
+    #personalityTrackerAtria .teal{
+      background:#CDFFFC;border:1px solid rgba(63,194,194,.45);
+      border-radius:12px;padding:10px 12px;
+    }
+    #personalityTrackerAtria .sectionTitle{
+      font-size:19px;font-weight:800;color:#211499;margin:0 0 8px;
+    }
+    #personalityTrackerAtria .body{
+      font-size:14.6px;line-height:1.55;color:rgba(0,12,72,.86);
+    }
+    #personalityTrackerAtria ul.clean{
+      margin:8px 0 0 18px;padding:0;
+      font-size:14.3px;line-height:1.55;color:#000C48;
+    }
+    #personalityTrackerAtria ul.clean li{margin:4px 0}
+    #personalityTrackerAtria .nav{
+      margin-top:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    }
+    #personalityTrackerAtria .btnPrimary,
+    #personalityTrackerAtria .btnSecondary{
+      appearance:none;border-radius:12px;padding:10px 14px;cursor:pointer;font-weight:700;
+      font-size:14px;
+    }
+    #personalityTrackerAtria .btnPrimary{
+      border:0;background:#211499;color:#FFFFFF;
+    }
+    #personalityTrackerAtria .btnSecondary{
+      border:1px solid rgba(0,12,72,.15);background:#FFFFFF;color:#000C48;
+    }
+    #personalityTrackerAtria .btnDownload{
+      appearance:none;border:0;border-radius:12px;padding:11px 16px;cursor:pointer;
+      font-weight:800;font-size:14px;background:#211499;color:#FFFFFF;
+      box-shadow:0 8px 16px rgba(33,20,153,.18);
+    }
+    #personalityTrackerAtria .grid2{
+      display:grid;grid-template-columns:1fr;gap:12px;
+    }
+    @media (min-width:760px){
+      #personalityTrackerAtria .grid2{grid-template-columns:1fr 1fr}
+    }
+    #personalityTrackerAtria .accent{
+      color:#211499;font-weight:800;
+    }
+    #personalityTrackerAtria .strong{
+      font-weight:800;color:#211499;
+    }
+    #personalityTrackerAtria .muted{
+      color:rgba(0,12,72,.72);
+    }
+    #personalityTrackerAtria .pageTag{
+      display:inline-block;margin-bottom:10px;padding:5px 10px;border-radius:999px;
+      background:rgba(63,194,194,.15);border:1px solid rgba(63,194,194,.35);
+      color:#367484;font-size:12px;font-weight:700;
+    }
+  </style>
+
+  <div class="shell">
+
+    <!-- Header -->
+    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start;">
+      <div>
+        <div class="title">Daily Consistency Signal Tracker</div>
+        <p class="subtitle"><b>Module 3 — Personality Trust</b></p>
+      </div>
+      <div class="pill" id="ptPagePill">Page 1 of 8</div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="page active">
+      <div class="pageTag">Purpose</div>
+      <div class="sectionTitle">Observe small credibility signals in everyday work</div>
+
+      <div class="body">
+        This tracker helps you observe <b>small credibility signals</b> during everyday work interactions.
+      </div>
+
+      <div class="soft" style="margin-top:10px;">
+        <div class="body">
+          Trust research shows that <b>credibility is built through repeated behavior patterns</b>, not single events
+          <i>(Mayer, Davis &amp; Schoorman, 1995)</i>.
+        </div>
+      </div>
+
+      <div class="body" style="margin-top:10px;">
+        During the next <b>3–5 working days</b>, take <b>one minute</b> at the end of your workday to reflect on how consistency appeared in your interactions.
+      </div>
+
+      <div class="teal" style="margin-top:10px;">
+        <div class="body">
+          You only need to record <b>one short example per day</b>.<br>
+          <b>The goal is not perfection.</b><br>
+          The goal is <b>awareness and repetition</b>.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+      <div class="pageTag">How to use</div>
+      <div class="sectionTitle">How to Use This Tracker</div>
+
+      <div class="card">
+        <div class="body">
+          At the end of each <b>workday</b>:
+        </div>
+        <ul class="clean">
+          <li>Recall <b>one situation</b> where expectations, commitments, or decisions were involved.</li>
+          <li>Briefly describe <b>what happened</b>.</li>
+          <li>Identify the <b>consistency signal</b> that appeared.</li>
+          <li>Note what you <b>observed in the interaction</b>.</li>
+        </ul>
+      </div>
+
+      <div class="soft" style="margin-top:10px;">
+        <div class="body">
+          <b>Short notes are enough.</b> You are tracking patterns, not writing a report.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+      <div class="pageTag">Signals to notice</div>
+      <div class="sectionTitle">Consistency Signals to Notice</div>
+
+      <div class="grid2">
+        <div class="card">
+          <ul class="clean" style="margin-top:0;">
+            <li><b>Following through</b> on commitments</li>
+            <li><b>Explaining changes</b> clearly</li>
+            <li><b>Applying expectations</b> consistently</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <ul class="clean" style="margin-top:0;">
+            <li><b>Communicating</b> transparently</li>
+            <li><b>Acknowledging mistakes</b></li>
+            <li><b>Acting in line</b> with previous agreements</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="teal" style="margin-top:10px;">
+        <div class="body">
+          You may notice <b>other signals</b> as well. The point is to observe how <b>credibility becomes visible</b>.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+      <div class="pageTag">Worksheet 1</div>
+      <div class="sectionTitle">Daily Observation Log</div>
+
+      <div class="body">
+        Download this worksheet and use it during the week to record <b>one short observation per day</b>.
+      </div>
+
+      <div class="card" style="margin-top:10px;">
+        <div class="strong" style="margin-bottom:6px;">Included in the worksheet:</div>
+        <ul class="clean" style="margin-top:0;">
+          <li>A <b>full-page log</b> with writing space for <b>Day 1–Day 5</b></li>
+          <li>An <b>example entry</b> for reference</li>
+          <li>Enough room to write clearly by hand</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px;">
+        <button type="button" class="btnDownload" id="btnDailyLog">Download Daily Observation Log (PNG)</button>
+        <span id="dailyMsg" style="margin-left:10px;font-size:13px;color:rgba(0,12,72,.72);"></span>
+      </div>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page">
+      <div class="pageTag">Worksheet 2</div>
+      <div class="sectionTitle">End-of-Week Reflection</div>
+
+      <div class="body">
+        At the end of the week, download this separate worksheet and answer the short reflection questions based on your observations.
+      </div>
+
+      <div class="card" style="margin-top:10px;">
+        <div class="strong" style="margin-bottom:6px;">This worksheet includes space to reflect on:</div>
+        <ul class="clean" style="margin-top:0;">
+          <li><b>Which situation</b> showed the strongest consistency</li>
+          <li><b>What behavior</b> you would continue repeating</li>
+          <li><b>What you would adjust</b> next time</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px;">
+        <button type="button" class="btnDownload" id="btnReflection">Download End-of-Week Reflection (PNG)</button>
+        <span id="reflectionMsg" style="margin-left:10px;font-size:13px;color:rgba(0,12,72,.72);"></span>
+      </div>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="page">
+      <div class="pageTag">Submission</div>
+      <div class="sectionTitle">Submission</div>
+
+      <div class="body">
+        Once your observations are complete, return to the course page and submit your worksheet.
+      </div>
+
+      <div class="card" style="margin-top:10px;">
+        <div class="body">
+          Your responses remain <b>confidential</b>.<br><br>
+          They are <b>not visible</b> to other learners or colleagues.
+        </div>
+      </div>
+
+      <div class="soft" style="margin-top:10px;">
+        <div class="body">
+          Your observations may only be reviewed by <b>Atria learning experts</b> for learning research and program improvement purposes.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div class="page">
+      <div class="pageTag">Why it matters</div>
+      <div class="sectionTitle">Why This Activity Matters</div>
+
+      <div class="body">
+        Credibility develops when people repeatedly observe <b>alignment between words and actions</b>.
+      </div>
+
+      <div class="card" style="margin-top:10px;">
+        <div class="body">
+          Over time, these repeated signals allow others to form expectations about <b>reliability</b>.<br><br>
+          When expectations become <b>predictable</b>, trust strengthens.
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="page">
+      <div class="pageTag">References</div>
+      <div class="sectionTitle">Supporting References</div>
+
+      <div class="card">
+        <ul class="clean" style="margin-top:0;">
+          <li><b>Mayer, R., Davis, J., &amp; Schoorman, F.</b> (1995). <i>An Integrative Model of Organizational Trust.</i></li>
+          <li><b>Dirks, K., &amp; Ferrin, D.</b> (2002). <i>Trust in Leadership.</i></li>
+          <li><b>Kolb, D.</b> (1984). <i>Experiential Learning.</i></li>
+          <li><b>Lally, P., van Jaarsveld, C., Potts, H., &amp; Wardle, J.</b> (2009). <i>How Habits Are Formed.</i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav">
+      <button type="button" class="btnSecondary" id="ptBack">Back</button>
+      <button type="button" class="btnPrimary" id="ptNext">Next</button>
+    </div>
+
+    <!-- Hidden canvases -->
+    <canvas id="dailyCanvas" width="1240" height="1754" style="display:none;"></canvas>
+    <canvas id="reflectionCanvas" width="1240" height="1754" style="display:none;"></canvas>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  const root = document.getElementById("personalityTrackerAtria");
+  const pages = root.querySelectorAll(".page");
+  const pill = document.getElementById("ptPagePill");
+  const btnBack = document.getElementById("ptBack");
+  const btnNext = document.getElementById("ptNext");
+  let page = 0;
+
+  function showPage(i){
+    page = i;
+    pages.forEach((p,idx)=> p.classList.toggle("active", idx === i));
+    pill.textContent = "Page " + (i+1) + " of " + pages.length;
+    btnBack.disabled = i === 0;
+    btnNext.disabled = i === pages.length - 1;
+  }
+
+  btnNext.addEventListener("click", ()=>{ if(page < pages.length-1) showPage(page+1); });
+  btnBack.addEventListener("click", ()=>{ if(page > 0) showPage(page-1); });
+  showPage(0);
+
+  function roundRect(ctx,x,y,w,h,r){
+    ctx.beginPath();
+    ctx.moveTo(x+r,y);
+    ctx.arcTo(x+w,y,x+w,y+h,r);
+    ctx.arcTo(x+w,y+h,x,y+h,r);
+    ctx.arcTo(x,y+h,x,y,r);
+    ctx.arcTo(x,y,x+w,y,r);
+    ctx.closePath();
+  }
+
+  function drawLines(ctx, x, y, w, lines, gap){
+    ctx.strokeStyle = "rgba(0,12,72,.22)";
+    ctx.lineWidth = 1;
+    for(let i=0;i<lines;i++){
+      const ly = y + (i*gap);
+      ctx.beginPath();
+      ctx.moveTo(x, ly);
+      ctx.lineTo(x+w, ly);
+      ctx.stroke();
+    }
+  }
+
+  function downloadFromCanvas(canvas, filename){
+    const url = canvas.toDataURL("image/png");
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  function drawHeader(ctx, title, subtitle){
+    const grad = ctx.createLinearGradient(60,50,1180,180);
+    grad.addColorStop(0, "#FFFFFF");
+    grad.addColorStop(1, "#CDFFFC");
+    ctx.fillStyle = grad;
+    roundRect(ctx, 60, 50, 1120, 150, 22);
+    ctx.fill();
+    ctx.strokeStyle = "rgba(63,194,194,.45)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#211499";
+    ctx.font = "800 34px Arial";
+    ctx.fillText(title, 90, 115);
+
+    ctx.fillStyle = "#000C48";
+    ctx.font = "600 18px Arial";
+    ctx.fillText(subtitle, 90, 150);
+  }
+
+  function drawSection(ctx, x, y, w, h, title){
+    ctx.fillStyle = "#FFFFFF";
+    roundRect(ctx, x, y, w, h, 18);
+    ctx.fill();
+    ctx.strokeStyle = "rgba(0,12,72,.12)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#211499";
+    ctx.font = "800 20px Arial";
+    ctx.fillText(title, x+22, y+34);
+  }
+
+  function makeDailyLog(){
+    const c = document.getElementById("dailyCanvas");
+    const ctx = c.getContext("2d");
+    ctx.clearRect(0,0,c.width,c.height);
+
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(0,0,c.width,c.height);
+
+    drawHeader(ctx, "Daily Observation Log", "Module 3 — Personality Trust");
+
+    // Purpose strip
+    ctx.fillStyle = "rgba(33,20,153,.06)";
+    roundRect(ctx, 60, 225, 1120, 110, 16);
+    ctx.fill();
+    ctx.strokeStyle = "rgba(33,20,153,.16)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#000C48";
+    ctx.font = "700 17px Arial";
+    ctx.fillText("Use this sheet to record one short example per day for the next 3–5 working days.", 90, 262);
+    ctx.fillText("Focus on small consistency signals that make credibility visible.", 90, 290);
+
+    // Example card
+    drawSection(ctx, 60, 360, 1120, 140, "Example");
+    ctx.fillStyle = "#000C48";
+    ctx.font = "600 17px Arial";
+    ctx.fillText("Day 1", 90, 422);
+    ctx.fillText("Situation: A team member asked about a delayed task", 170, 422);
+    ctx.fillText("Consistency Signal: Explained change clearly", 170, 452);
+    ctx.fillText("What Happened: The conversation stayed calm and the timeline was understood", 170, 482);
+
+    // Log table area
+    drawSection(ctx, 60, 525, 1120, 1120, "Daily Observation Log");
+
+    // Table header
+    const startX = 90;
+    const startY = 585;
+    const col1 = 130, col2 = 340, col3 = 250, col4 = 330;
+    const rowH = 190;
+
+    ctx.fillStyle = "#CDFFFC";
+    roundRect(ctx, startX, startY, col1+col2+col3+col4, 48, 10);
+    ctx.fill();
+    ctx.strokeStyle = "rgba(63,194,194,.45)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#211499";
+    ctx.font = "800 15px Arial";
+    ctx.fillText("Day", startX+12, startY+30);
+    ctx.fillText("Situation", startX+col1+12, startY+30);
+    ctx.fillText("Consistency Signal", startX+col1+col2+12, startY+30);
+    ctx.fillText("What Happened in the Interaction", startX+col1+col2+col3+12, startY+30);
+
+    const rows = ["Day 1","Day 2","Day 3","Day 4 (Optional)","Day 5 (Optional)"];
+    let y = startY + 62;
+
+    rows.forEach((r)=>{
+      // row border
+      ctx.strokeStyle = "rgba(0,12,72,.14)";
+      ctx.lineWidth = 2;
+      roundRect(ctx, startX, y, col1+col2+col3+col4, rowH, 10);
+      ctx.stroke();
+
+      // verticals
+      ctx.beginPath();
+      ctx.moveTo(startX+col1, y); ctx.lineTo(startX+col1, y+rowH);
+      ctx.moveTo(startX+col1+col2, y); ctx.lineTo(startX+col1+col2, y+rowH);
+      ctx.moveTo(startX+col1+col2+col3, y); ctx.lineTo(startX+col1+col2+col3, y+rowH);
+      ctx.stroke();
+
+      ctx.fillStyle = "#211499";
+      ctx.font = "800 15px Arial";
+      ctx.fillText(r, startX+12, y+24);
+
+      drawLines(ctx, startX+col1+12, y+34, col2-24, 4, 34);
+      drawLines(ctx, startX+col1+col2+12, y+34, col3-24, 4, 34);
+      drawLines(ctx, startX+col1+col2+col3+12, y+34, col4-24, 4, 34);
+
+      y += rowH + 12;
+    });
+
+    // footer
+    ctx.fillStyle = "rgba(33,20,153,.07)";
+    roundRect(ctx, 60, c.height-90, 1120, 50, 14);
+    ctx.fill();
+    ctx.fillStyle = "#211499";
+    ctx.font = "800 18px Arial";
+    ctx.fillText("One short example per day is enough.", 90, c.height-58);
+
+    return c;
+  }
+
+  function makeReflection(){
+    const c = document.getElementById("reflectionCanvas");
+    const ctx = c.getContext("2d");
+    ctx.clearRect(0,0,c.width,c.height);
+
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(0,0,c.width,c.height);
+
+    drawHeader(ctx, "End-of-Week Reflection", "Module 3 — Personality Trust");
+
+    ctx.fillStyle = "rgba(33,20,153,.06)";
+    roundRect(ctx, 60, 225, 1120, 96, 16);
+    ctx.fill();
+    ctx.strokeStyle = "rgba(33,20,153,.16)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.fillStyle = "#000C48";
+    ctx.font = "700 17px Arial";
+    ctx.fillText("After completing several observations, reflect briefly on what you noticed this week.", 90, 262);
+    ctx.fillText("Short responses are enough. Focus on what became visible through repeated action.", 90, 290);
+
+    let y = 350;
+    const questions = [
+      "1. Which situation showed the strongest consistency?",
+      "2. What behavior would you continue repeating?",
+      "3. What would you adjust next time?"
+    ];
+
+    questions.forEach((q, idx)=>{
+      const h = idx === 0 ? 360 : 360;
+      drawSection(ctx, 60, y, 1120, h, q);
+      drawLines(ctx, 90, y+62, 1060, 9, 30);
+      y += h + 18;
+    });
+
+    ctx.fillStyle = "rgba(33,20,153,.07)";
+    roundRect(ctx, 60, c.height-90, 1120, 50, 14);
+    ctx.fill();
+    ctx.fillStyle = "#211499";
+    ctx.font = "800 18px Arial";
+    ctx.fillText("Reflection connects real experience with awareness.", 90, c.height-58);
+
+    return c;
+  }
+
+  document.getElementById("btnDailyLog").addEventListener("click", function(){
+    const canvas = makeDailyLog();
+    downloadFromCanvas(canvas, "daily-consistency-observation-log.png");
+    const msg = document.getElementById("dailyMsg");
+    msg.textContent = "Downloaded ✓";
+    setTimeout(()=> msg.textContent = "", 1600);
+  });
+
+  document.getElementById("btnReflection").addEventListener("click", function(){
+    const canvas = makeReflection();
+    downloadFromCanvas(canvas, "end-of-week-reflection.png");
+    const msg = document.getElementById("reflectionMsg");
+    msg.textContent = "Downloaded ✓";
+    setTimeout(()=> msg.textContent = "", 1600);
+  });
+})();
+</script>
